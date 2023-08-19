@@ -1,0 +1,113 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.banner{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("background.jpg");
+    background-position: center;
+  
+}
+.navbar{
+
+    width: 100%;
+    margin: auto;
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    justify-content: space-between;
+
+}
+.logo{
+      color: aqua;
+      position: relative;
+      top: 10px;
+      left: 20px;
+      font-size: 40px;
+      font-weight: 100px;
+      font-family: Algerian;
+       
+}
+.navbar ul li{
+display: inline;
+font-size: 20PX;
+margin-right:10px ;
+position: relative;
+justify-content: space-evenly;
+top: 10px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    margin: 40px;
+    color: white;
+    /* transition: 2s ease-in; */
+    cursor:pointer;
+}
+.navbar li:hover{
+    animation: underline-animation 0.3s  forwards;
+}
+@keyframes underline-animation {
+    0% {
+ text-decoration: none;
+    }
+    50% {
+        text-decoration: underline;
+      }
+    100% {
+        width: 100%;
+      text-decoration: underline;
+      color: aqua;
+    }
+}
+.main{
+ width: 100%;
+ position: absolute;
+  top: 40%;
+ /* left: 30%;  */
+ color: white;
+ text-align: center;
+}
+.main h1{
+    font-size: 70px;
+    /* margin-top: 80px; */
+
+}
+.main p{
+ margin:20px auto;
+ font-weight: 100;
+ line-height: 25px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    border-radius: 25px;
+    margin:5px;
+    text-align: center;
+    background-color: transparent;
+    border: 2px solid #009688;
+    color:#fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background-color:#009688 ;
+    width: 0%;
+    height: 100%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index:-1;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+    background-color: #009688;
+}

@@ -10,9 +10,9 @@
     <div class="banner">
         <div class="navbar">
             <h2 class="logo">INTERIOR</h2>
-            
-           
-                <ul>
+ <button class="toggle-menu"onclick="togglemenu()">Menu</button>
+                <ul  id="menu">
+                    
                     <li><a href="#">HOME</a></li>
                     <li><a href="#">KITCHEN</a></li>
                     <li><a href="#">BATHROOM</a></li>
@@ -22,7 +22,7 @@
         <div class="main">
             <h1>DESIGN YOUR HOUSE</h1>
         <P>Turning Houses into Homes, One Design at a Time</P>
-        <div>
+        <div class="button">
             <button type="button"><span></span>Watch more</button>
             <button type="button"><span></span>Subscribe</button>
         </div>
@@ -30,4 +30,12 @@
     </div>
     
 </body>
+<script>
+    function togglemenu(){
+        var menu=document.getElementById("menu");
+        menu.classList.toggle("show");
+        var togglemenu=document.querySelector(".toggle-menu")
+        togglemenu.style.display="none";
+    }
+</script>
 </html>
